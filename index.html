@@ -14,14 +14,28 @@
     <!-- Bootstrap Core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr" crossorigin="anonymous">
 
+    
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
+    .row{
+        font-family: 'Abril Fatface', cursive;
+    }
     body {
+        
+        background-color: #1FC1F7;
         padding-top: 70px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
+    .jumbotron{
+        background-color: #ffff99;   
+    }
+    h1 {
+        font-family: 'Lato', sans-serif;
+    }
     </style>
-
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,7 +84,7 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Shakespear's Insults generator</h1>
+                <h1>Shakespeare's Insults generator</h1>
                 
                 <!--<p class="lead">Complete with pre-defined file paths that you won't have to change!!</p>
                 <ul class="list-unstyled">
@@ -81,7 +95,7 @@
             
         </div>
         <div class="jumbotron">
-          <h1>Thou art an</h1>
+          <h1>Thou art a</h1>
           <h3 id="insultHere">...</h3>
           <a href="#" onClick="insult()" class="btn btn-primary btn-lg">Insult Me!</a>
         </div>
@@ -151,53 +165,107 @@
             "boil-brained",
             "clapper-clawed",
             "clay-brained",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "common-kissing",
+            "crook-pated",
+            "dismal-dreaming",
+            "dizzy-eyed",
+            "doghearted",
+            "dread-bolted",
+            "earth-vexing",
+            "elf-skinned",
+            "fat-kidneyed",
+            "fen-sucked",
+            "flap-mouthed",
+            "fly-bitten",
+            "folley-fallen",
+            "fool-born",
+            "full-gorged",
+            "guts-griping",
+            "half-faced",
+            "hasty-witted",
+            "hedge-born",
+            "hell-hated",
+            "idle-headed",
+            "ill-breeding",
+            "ill-nurtured",
+            "knotty-pated",
+            "milk-livered",
+            "motley-minded",
+            "onion-eyed",
+            "plum-plucked",
+            "pottle-deep",
+            "pox-marked",
+            "reeling-ripe",
+            "rough-hewn",
+            "rude-growing",
+            "rump-fed",
+            "shard-borne",
+            "sheep-biting",
+            "spur-galled",
+            "swag-bellied",
+            "tardy-gaited",
+            "tickle-brained",
+            "toad-spotted",
+            "unchin-snouted",
+            "weather-bitten",
+        ];
+        var column3 = [
+            "apple-john",
+            "baggage",
+            "barnacle",
+            "bladder",
+            "boar-pig",
+            "bugbear",
+            "bum-bailey",
+            "canker-blossom",
+            "clack-dish",
+            "clotpole",
+            "coxcomb",
+            "codpiece",
+            "death-token",
+            "dewberry",
+            "flap-dragon",
+            "flax-wench",
+            "flirt-gill",
+            "foot-licker",
+            "fustilarian",
+            "giglet",
+            "gudgeon",
+            "haggard",
+            "harpy",
+            "hedge-pig",
+            "horn-beast",
+            "hugger-mugger",
+            "joithead",
+            "lewdster",
+            "lout",
+            "maggot-pie",
+            "malt-worm",
+            "mammet",
+            "measle",
+            "minnow",
+            "miscreant",
+            "moldwarp",
+            "mumble-news",
+            "nut-hook",
+            "pigeon-egg",
+            "pignut",
+            "puttock",
+            "pumpion",
+            "ratsbane",
+            "scut",
+            "skainsmate",
+            "strumpet",
+            "varlot",
+            "vassal",
+            "whey-face",
+            "wagtail",
+            "Pablo Parodi",
+            "dunceboy"
         ];
         function insult()
         {
-            var insultString = column1[Math.floor((Math.random() * 49) + 0)].concat(" ",column1[Math.floor((Math.random() * 49) + 0)]," ",column1[Math.floor((Math.random() * 49) + 0)]);
+            var insultString = column1[Math.floor((Math.random() * 49) + 0)].concat("  ",column2[Math.floor((Math.random() * 49) + 0)],"  ",column3[Math.floor((Math.random() * 49) + 0)]);
             document.getElementById("insultHere").innerHTML =insultString;
         }
         
