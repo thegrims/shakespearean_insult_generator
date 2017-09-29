@@ -4,4 +4,5 @@ This website concatinates stings to generate zaney insults. It was built to lear
 
 [Insulter main page](https://thegrims.github.io/shakespearean_insult_generator/ "Insult me!")
 
-![alt text](https://github.com/thegrims/shakespeare_insults.PNG "Website")
+![alt text](https://raw.githubusercontent.com/thegrims/shakespearean_insult_generator/master/shakespeare_insults.PNG)
+
